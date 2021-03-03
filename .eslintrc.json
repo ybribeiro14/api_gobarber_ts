@@ -18,12 +18,21 @@
   "rules": {
     "prettier/prettier": "error",
     "class-methods-use-this": "off",
+    "no-useless-constructor": "off",
     "camelcase": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
       {
         "ts": "never"
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "prefix": ["I"],
+        "format": ["PascalCase"]
       }
     ]
   },
